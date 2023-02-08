@@ -1,0 +1,41 @@
+//Amsi Pro
+
+@font-face {
+    font-family: "amsiproregular";
+    src: url("../fonts/amsi-pro/AmsiPro-Regular.otf") format("opentype"), url("../fonts/amsi-pro/AmsiPro-Regular.ttf") format("ttf");
+}
+
+$amsipro: "amsiproregular",
+serif;
+
+@font-face {
+    font-family: "amsiprosemibold";
+    src: url("../fonts/amsi-pro/AmsiPro-SemiBold.otf") format("opentype"), url("../fonts/amsi-pro/AmsiPro-SemiBold.ttf") format("ttf");
+}
+
+$amsiprosemibold: "amsiprosemibold",
+serif;
+
+@font-face {
+    font-family: "amsiproblack";
+    src: url("../fonts/amsi-pro/AmsiPro-Black.otf") format("opentype"), url("../fonts/amsi-pro/AmsiPro-Black.ttf") format("ttf");
+}
+
+$amsiproblack: "amsiproblack",
+serif;
+
+@font-face {
+    font-family: "amsiproultra";
+    src: url("../fonts/amsi-pro/AmsiPro-Ultra.otf") format("opentype"), url("../fonts/amsi-pro/AmsiPro-Ultra.ttf") format("ttf");
+}
+
+$amsiproultra: "amsiproultra",
+serif;
+
+@font-face {
+    font-family: "amsiprolight";
+    src: url("../fonts/amsi-pro/AmsiPro-Light.otf") format("opentype"), url("../fonts/amsi-pro/AmsiPro-Light.ttf") format("ttf");
+}
+
+$amsiprolight: "amsiprolight",
+serif;

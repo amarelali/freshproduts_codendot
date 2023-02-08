@@ -1,0 +1,141 @@
+@mixin xs() {
+    @media (max-width: 576px) {
+        @content;
+    }
+}
+
+@mixin sm() {
+    @media (min-width: 577px) {
+        @content;
+    }
+}
+
+@mixin md() {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin lg() {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin xl() {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin xxl() {
+    @media (min-width : 1500px) {
+        @content;
+    }
+}
+
+@mixin xxxl() {
+    @media (min-width : 2000) {
+        @content;
+    }
+}
+
+
+@mixin max-lg() {
+    @media (max-width: 992px) {
+        @content;
+    }
+}
+
+
+////
+///
+@mixin list-item {
+    .container-list-item {
+        display: flex;
+        flex-direction: row;
+        gap: 18px;
+
+        .icon-list-item {
+            .cont {
+                
+                width: 20px;
+                height: 20px;
+                
+                @include md(){
+
+                    width: 30px;
+                    height: 30px;
+                    
+                }
+
+                img {
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+
+        }
+
+        .text-list-item {
+
+        
+        }
+
+    }
+}
+
+///
+@mixin logo($width) {
+    .logo {
+        display: flex;
+        flex-direction: column;
+        width: $width;
+    
+        .bg-logo {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='76.12' height='59.28' viewBox='0 0 76.12 59.28'%3E%3Cg id='Group_4' data-name='Group 4' transform='translate(-577.24 -279.405) rotate(-16)'%3E%3Cg id='Group_38' data-name='Group 38' transform='translate(475.063 437.459)'%3E%3Cpath id='Path_75' data-name='Path 75' d='M931.937,465.1c-8.3-8.134-18.507-10.975-29.1-12.246-.4.791.123,1.147.367,1.529a34.808,34.808,0,0,1,4.646,12.3c1.418,7.379,3.127,14.58,6.872,20.892a17.536,17.536,0,0,0,14.841,9.131,67.445,67.445,0,0,0-8.879-22.271c.07-.461.074-.966.563-1.152.282.135.663.176.833.419,5.254,7.548,10.105,15.377,13.183,24.559.568,1.693.816,3.679,2.332,5.692-.073-5.782,1.01-10.761,1.67-15.8C940.488,478.79,937.907,470.948,931.937,465.1Z' transform='translate(-902.692 -452.856)' fill='%234eaa34'/%3E%3Cpath id='Path_76' data-name='Path 76' d='M960.668,477.79c6.247-4.688,13.292-5.684,20.46-5.6.2.562-.183.753-.378.985a23.389,23.389,0,0,0-4.176,7.784c-1.593,4.79-3.364,9.437-6.413,13.311a11.782,11.782,0,0,1-10.688,4.777A45.3,45.3,0,0,1,967.343,485c-.006-.314.036-.65-.274-.817-.2.065-.457.059-.591.206-4.163,4.566-8.083,9.354-10.94,15.2a11.233,11.233,0,0,1-2.054,3.586,70.132,70.132,0,0,0,.278-10.674C953.769,486.155,956.177,481.159,960.668,477.79Z' transform='translate(-915.071 -457.567)' fill='%234eaa34'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            width: 50px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 30px;
+    
+        }
+    
+        .text-logo {
+            font-weight: bold;
+            font-size: 2rem;
+            font-family: $amsiproultra;
+            line-height: 100%;
+    
+        }
+    }
+    
+    
+}
+
+
+@mixin responsive-font-size() {
+
+    @include xs() {
+        font-size: 0.9rem;
+    }
+
+    @include sm() {
+        font-size: 0.9rem;
+    }
+
+    @include md() {
+        font-size: 0.9rem;
+    }
+
+    @include xl() {
+        font-size: 1rem;
+    }
+
+    @include xxl(){
+        font-size: 1.1rem;
+    }
+    @include xxxl(){
+        font-size: 2rem;
+    }
+}
